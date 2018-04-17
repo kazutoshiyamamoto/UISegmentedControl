@@ -23,9 +23,23 @@ class ViewController: UIViewController {
         }
     }
     
+    func RGBA(red:CGFloat, green:CGFloat, blue:CGFloat, alpha:CGFloat) -> UIColor {
+        // 0〜1に換算する
+        let r = red/255.0
+        let g = green/255/0
+        let b = blue/255.0
+        let rgba = UIColor(red: r, green: g, blue: b, alpha: alpha)
+        return rgba
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // 色を作る
+        let color = RGBA(red: 100, green: 255, blue: 200, alpha: 1)
+        // 背景色を指定する
+        self.view.backgroundColor = color
     }
     
     override func didReceiveMemoryWarning() {
