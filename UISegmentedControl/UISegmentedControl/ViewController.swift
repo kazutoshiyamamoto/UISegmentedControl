@@ -35,11 +35,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        // 色を作る
-        let color = RGBA(red: 100, green: 255, blue: 200, alpha: 1)
-        // 背景色を指定する
-        self.view.backgroundColor = color
     }
     
     override func didReceiveMemoryWarning() {
