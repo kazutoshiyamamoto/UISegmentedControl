@@ -23,15 +23,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func RGBA(red:CGFloat, green:CGFloat, blue:CGFloat, alpha:CGFloat) -> UIColor {
-        // 0〜1に換算する
-        let r = red/255.0
-        let g = green/255/0
-        let b = blue/255.0
-        let rgba = UIColor(red: r, green: g, blue: b, alpha: alpha)
-        return rgba
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
