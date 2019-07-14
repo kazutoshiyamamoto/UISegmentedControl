@@ -31,6 +31,7 @@
                                     <segment title="View1"/>
                                     <segment title="View2"/>
                                 </segments>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="changedColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="ACn-PH-CKL"/>
                                 </connections>
