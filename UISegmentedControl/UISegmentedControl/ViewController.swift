@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // ビューのプロパティ宣言
     @IBOutlet weak var colorChip: UIView!
-    // セグメンテッドコントロールで色を選び直す
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     @IBAction func changedColor(_ sender: UISegmentedControl) {
         // 選ばれているインデックス番号で処理を振り分ける
         switch sender.selectedSegmentIndex {
@@ -22,15 +30,6 @@ class ViewController: UIViewController {
         default: colorChip.backgroundColor = UIColor.blue
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 }
 

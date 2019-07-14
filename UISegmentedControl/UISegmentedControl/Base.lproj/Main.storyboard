@@ -50,6 +50,7 @@
                     </view>
                     <connections>
                         <outlet property="colorChip" destination="2qW-cb-5dx" id="2W2-PG-3vA"/>
+                        <outlet property="segmentedControl" destination="yue-XA-z4u" id="mBc-Zt-nha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
