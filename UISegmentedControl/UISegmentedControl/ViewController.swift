@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let attribute = [NSAttributedString.Key.foregroundColor:UIColor.darkGray, NSAttributedString.Key.font: UIFont(name: "HiraginoSans-W6", size: 16)!]
+        self.segmentedControl.setTitleTextAttributes(attribute, for: .normal)
     }
     
     override func didReceiveMemoryWarning() {
